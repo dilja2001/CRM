@@ -1,0 +1,14 @@
+const express = require("express")
+const router = express.Router()
+
+const auth = require("../middleware/authMiddleware")
+const role = require("../middleware/roleMiddleware")
+
+const userController = require("../controllers/userController")
+
+
+// Admin get all users
+
+router.get("/",auth,role("admin"),userController.getUsers)
+
+module.exports = router
