@@ -12,10 +12,9 @@ const dashboardRoutes = require("./routes/dashboardRoutes")
 const app = express()
 
 app.use(cors({
-  origin: "https://clientcrm-taupe.vercel.app/api",
-
+  origin: ["http://localhost:5173", "https://your-frontend.vercel.app"],
   credentials: true
-}));
+}))
 app.use(express.json())
 
 // Routes
