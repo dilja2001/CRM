@@ -34,6 +34,7 @@ navigate("/sales")
 }
 
 }catch(err){
+    console.log(err)
 alert("Login Failed",err)
 }
 

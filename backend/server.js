@@ -12,7 +12,7 @@ const dashboardRoutes = require("./routes/dashboardRoutes")
 const app = express()
 
 app.use(cors({
-  origin: ["crmclient-umber.vercel.app"],
+  origin: ["https://crmclient-umber.vercel.app"],
   credentials: true
 }))
 app.use(express.json())
